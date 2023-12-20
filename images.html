@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/18617957/pexels-photo-18617957/free-photo-of-palace-near-trees.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" width="400px" height="400px" alt=""> <!--here src->source,alt->if image do not load-->
+<!-- images have=>1.absolute path
+             2.relative path
+             ./->current
+             ../->back -->
+<!-- we need <picture></picture> in that we need <source media="(min-width:400px)" srcset=""> because if someone see the images on mobile,laptop according that image have to see -->
+<picture>
+    <source media="(min-width:400px)" srcset="C:\Users\bhush\OneDrive\Desktop\img\benjamin-franklin-success-quote-1523888263.jpg">
+
+    <source media="(min-width:600px)" srcset="C:\Users\bhush\OneDrive\Desktop\img\benjamin-franklin-success-quote-1523888263.jpg">
+</picture>
+<!--image map generator,map is used for when we click on specific portion of image then that will do some-->
+
+
+</body>
+</html>

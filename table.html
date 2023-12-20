@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 9px;
+        }
+        tr:nth-child(even){
+             background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!--to make country and country code group we use colgroup,in that we are giving span as 2 because we want 2 columns group-->
+        <colgroup>
+            <col span="2" style="background-color: aqua;">  
+        </colgroup>
+        <tr>
+            <th>country</th>
+            <th>country code</th>
+            <th>email</th>
+        </tr>
+        <tr>
+            <td>india</td>
+            <td>in</td>
+            <td>india@gmail.com</td>
+        </tr>
+        <tr>
+            <td>united states of america</td>
+            <td>usa</td>
+            <td>unitedstatesofamerica@gmail.com</td>
+        </tr>
+        <tr>
+            <td>france</td>
+            <td>fr</td>
+            <td>france@gmail.com</td>
+        </tr>
+    </table>
+    <table style="width: 40%;">
+        <tr>
+            <th colspan="2">country code</th>
+            <td>in</td>
+        </tr>
+        <tr>
+            <th rowspan="4">country code</th>
+            <td>usa</td>
+    </table>
+</body>
+</html>
