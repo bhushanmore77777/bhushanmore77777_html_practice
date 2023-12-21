@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms one</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms in Html</h1>
+    <form action="url" method="get" accept-charset="UTF-8" enctype="">
+        <!-- here enctype="text/plain"->-we cannot add images between text
+        here enctype="multipart/form-data"->-we can add images by browse between text -->
+        <label for="fname">First Name</label> 
+        <!-- here for means this is associated with which input tag when we click on that label then that input tag will highlight -->
+        <input type="text" name="" placeholder="firstname" id="fname" value="BHUSHAN">
+        <!-- here value=>-default value -->
+        <label for="lname">Last Name</label>
+        <input type="text" name="" placeholder="lastName" id="lname"><br/>
+        <label for="password">Password</label>
+        <input type="password" name="" id="">
+        <input type="week" name="" id="">
+        <select name="" id="">
+            <option value="vscode">vscode</option>
+            <option value="sublime">sublime</option>
+        </select>
+        <input type="reset" value="reset">
+        <button type="submit">Submit</button>
+    </form>
+    <!--above action means where we have to store,forms are of 2 types denoted by method when we have to submit data on server used post in this data is encrypt,when we have to submit with clear text used get forms having input element 1.button,2.text,3.checkbox
+    -->
+</body>
+</html>
